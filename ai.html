@@ -731,7 +731,7 @@ async function sendMessage() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: 'meta-llama/llama-3-7b-instruct',
+                model: 'meta-llama/Llama-3.3-70B-Instruct-Turbo',
                 messages: [
                     { role: 'system', content: rules },
                     { role: 'user', content: userMessage }
@@ -780,7 +780,7 @@ async function sendMessage() {
         errorMessage.className = 'message ai fade-in';
         errorMessage.innerHTML = `
             <div class="message-avatar"><i class="material-icons">error</i></div>
-            <div class="message-content"><p>Sorry, I encountered an error: ${error.message}</p></div>
+            <div class="message-content"><p>Something went wrong: ${error.message}</p></div>
         `;
         chatContainer.appendChild(errorMessage);
         chatContainer.scrollTop = chatContainer.scrollHeight;
