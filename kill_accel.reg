@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"MouseThreshold1"=dword:00000000
+"MouseThreshold2"=dword:00000000
+"MouseSpeed"=dword:00000000
